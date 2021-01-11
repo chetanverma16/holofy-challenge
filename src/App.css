@@ -22,18 +22,25 @@ body {
 }
 
 video {
-  overflow: hidden;
   position: absolute;
-  margin: 0;
-  padding: 0;
-  transition: all 0.2s ease;
   border-radius: 10px;
   width: 250px;
   height: auto;
+}
+img {
+  display: none;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   video {
     width: 100%;
+    background-color: green;
+    display: none;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
   }
 }
